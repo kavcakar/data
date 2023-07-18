@@ -1,5 +1,5 @@
 import firebase from 'firebase/app';
-import 'firebase/firestore';
+import 'firebase/Firestore';
 
 
 const firebaseConfig = {
@@ -173,7 +173,7 @@ const restaurantsData = [
       ];
 
       restaurantsData.forEach((restaurant) => {
-        firestore.collection('restaurants').add(restaurant)
+        Firestore.collection('restaurants').add(restaurant)
           .then((docRef) => {
             console.log('Restoran belgesi başarıyla eklendi:', docRef.id);
           })

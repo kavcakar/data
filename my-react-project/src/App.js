@@ -34,9 +34,9 @@ const App = () => {
   .catch((error) => {
     console.error('Döküman eklenirken bir hata oluştu:', error);
   });
-);
+
 
   
-};
+
 
 export default App
